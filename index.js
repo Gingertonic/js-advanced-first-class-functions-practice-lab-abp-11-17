@@ -21,9 +21,9 @@ function logDriverNames(driverArray) {
 //   });
 // };
 
-function logDriversByHometown(driverArray, location) {
+function logDriversByHometown(driverArray, hometown) {
   drivers.forEach(function (driver) {
-    if (driver.hometown === location) {
+    if (driver.hometown === hometown) {
       console.log(driver.name);
     }
   });
