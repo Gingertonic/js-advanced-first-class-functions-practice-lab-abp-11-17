@@ -12,7 +12,7 @@ function logDriverNames(driverArray) {
 //     )
 //   })
 // }
-// 
+//
 // const logDriversByHometown = function (drivers, hometown) {
 //   drivers.forEach(function (driver) {
 //     if (driver.hometown === hometown) {
@@ -23,7 +23,7 @@ function logDriverNames(driverArray) {
 
 function logDriversByHometown(driverArray, location) {
   drivers.forEach(function (driver) {
-    if (driver.hometown === hometown) {
+    if (driver.hometown === location) {
       console.log(driver.name);
     }
   });
