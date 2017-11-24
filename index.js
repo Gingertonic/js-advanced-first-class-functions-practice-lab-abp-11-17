@@ -24,13 +24,9 @@ const driversByRevenue = function(drivers) {
 const driversByName = function(drivers){
   const sortByName = [...drivers];
   sortByName.sort((function(a, b){
-    var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
-    if (nameA < nameB) //sort string ascending
-        return -1
-    if (nameA > nameB)
-        return 1
-    return 0 //default return value (no sorting)
+    var a = a.name
+    var b = b.name
+    sort((a, b) => a.localeCompare(b))
     ))
   return sortByName;
-  });
-};
+}
