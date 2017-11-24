@@ -20,3 +20,10 @@ const driversByRevenue = function(drivers) {
   });
   return sortByRevenue;
 }
+
+const driversByName = function(drivers){
+  const sortByName = [...drivers];
+  sortByName.sort(function(a,b){
+    return a.name - b.name
+  });
+};
