@@ -5,10 +5,10 @@ function logDriverNames(driverArray) {
   })
 }
 
-// function logDriversByHometown(driverArray, location) {
-//   driverArray.forEach (function(driver){
-//     if driver.hometown === location (
-//       console.log(driver.name);
-//     )
-//   })
-// }
+function logDriversByHometown(driverArray, location) {
+  driverArray.forEach (function(driver){
+    if driver.hometown === location
+      console.log(driver.name);
+    )
+  })
+}
